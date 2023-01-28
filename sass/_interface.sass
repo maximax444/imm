@@ -1,0 +1,365 @@
+.container
+    width: 1540px
+    margin: auto
+@media (max-width: 1569px)
+    .container
+        width: 1170px
+@media (max-width: 1199px)
+    .container
+        width: 970px
+        margin: auto
+@media (max-width: 991px)
+    .container
+        width: 740px
+        margin: auto
+@media (max-width: 767px)
+    .container
+        width: 550px
+        margin: auto
+@media (max-width: 575px)
+    .container
+        width: 100%
+        padding-left: 15px
+        padding-right: 15px
+        margin: auto
+@keyframes marquee
+    0%
+        transform: translateX(0)
+
+    100%
+        transform: translateX(-66.6%)
+.btn
+    position: relative
+    overflow: hidden
+.btn:after
+    content: ""
+    display: block
+    width: 20px
+    height: 300px
+    margin-left: 50px
+    background: #fff
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.5) 100%)
+    filter: blur(30px)
+    left: -40px
+    top: -100px
+    z-index: 1
+    transform: rotate(45deg)
+    position: absolute
+    animation: movingFlare 3s ease-in-out 0.05s infinite
+@keyframes movingFlare
+    0%
+        left: -70px
+        margin-left: 0px
+    30%
+        left: 110%
+        margin-left: 80px
+    100%
+        left: 110%
+        margin-left: 80px
+.main
+    padding-top: 40px
+    padding-bottom: 160px
+    &__wrap
+        position: relative
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        padding-right: 45px
+    &__links
+        position: fixed
+        top: 50%
+        margin-top: -125px
+        background-color: #fff
+        right: 50px
+        z-index: 15
+        border: 1px solid #14274E
+        border-radius: 20px
+        width: 40px
+        height: 250px
+        grid-gap: 5px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        a
+            width: 40px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                opacity: 0.8
+    &__cont
+        width: 440px
+    &__title
+        font-family: 'Raleway'
+        font-weight: 700
+        font-size: 64px
+        line-height: 110%
+        color: #000000
+        margin-bottom: 40px
+    &__subtitle
+        font-size: 22px
+        line-height: 140%
+        margin-bottom: 40px
+    &__block
+        width: 200px
+        &-name
+            font-size: 20px
+            line-height: 140%
+            margin-bottom: 10px
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        grid-gap: 25px
+    &__select
+        width: 100%
+        position: relative
+        &-top
+            border: 1px solid rgba(0, 0, 0, 0.1)
+            border-radius: 4px
+            height: 42px
+            display: flex
+            align-items: center
+            padding-left: 15px
+            font-size: 18px
+            line-height: 140%
+            color: rgba(0, 0, 0, 0.3)
+            position: relative
+            cursor: pointer
+            text-decoration: none
+            &:hover
+                color: #5583E3
+            &::after
+                content: ""
+                display: block
+                width: 15px
+                height: 15px
+                right: 13px
+                transition: all 0.3s
+                position: absolute
+                top: 13px
+                background: url('../img/drop.svg') center no-repeat
+        &-drop
+            background: #FFFFFF
+            border: 1px solid rgba(0, 0, 0, 0.1)
+            border-top: 0
+            margin-top: -3px
+            z-index: 3
+            position: absolute
+            left: 0
+            top: 42px
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.08)
+            border-radius: 0 0 4px 4px
+            padding: 10px 15px
+            width: 100%
+            display: none
+            a
+                font-size: 18px
+                line-height: 140%
+                color: rgba(0, 0, 0, 0.3)
+                text-decoration: none
+                display: block
+                margin-bottom: 5px
+                &:hover
+                    color: #5583E3
+        &:hover
+            .main__select
+                &-top::after
+                    transform: rotate(180deg)
+                &-drop
+                    display: block
+    &__map
+        position: relative
+    &__place
+        position: absolute
+        display: none
+.top
+    background: #14274E
+    &__menu
+        list-style-type: none
+        margin: 0
+        padding: 0
+        display: flex
+        grid-gap: 45px
+        a
+            display: block
+            font-weight: 400
+            font-size: 20px
+            line-height: 140%
+            color: #FFFFFF
+            padding: 20px 0
+            text-decoration: none
+            &:hover
+                opacity: 0.8
+    &__soc
+        display: flex
+        align-items: center
+        grid-gap: 5px
+        a
+            width: 40px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                opacity: 0.8
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__right
+        display: flex
+        align-items: center
+        grid-gap: 27px
+    &__lang
+        font-size: 16px
+        line-height: 140%
+        text-transform: uppercase
+        color: #FFFFFF
+        position: relative
+        &-top
+            display: flex
+            align-items: center
+            grid-gap: 8px
+            img
+                transition: all 0.3s
+        &-drop
+            position: absolute
+            top: 100%
+            right: -25px
+            background: #14274E
+            padding: 15px 25px
+            z-index: 2
+            display: none
+            a
+                display: block
+                text-decoration: none
+                padding: 5px 0
+                color: #FFFFFF
+                &:hover
+                    opacity: 0.8
+        &:hover
+            .top__lang
+                &-top
+                    img
+                        transform: rotate(180deg)
+                &-drop
+                    display: block
+.footer
+    background: #14274E
+    padding-top: 15px
+    padding-bottom: 50px
+    &__wrap
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__soc
+        display: flex
+        align-items: center
+        grid-gap: 5px
+        margin-bottom: 14px
+        a
+            text-decoration: none
+            display: flex
+    &__copy
+        max-width: 156px
+        font-weight: 400
+        font-size: 12px
+        line-height: 140%
+        color: #FFFFFF
+        margin-left: 15px
+    &__menu
+        margin: 0
+        padding: 0
+        list-style-type: none
+        display: flex
+        grid-gap: 68px
+        &>li
+            &>a
+                font-family: 'Raleway'
+                margin-bottom: 16px
+                display: block
+                font-weight: 600
+                font-size: 18px
+                line-height: 110%
+                text-decoration: none
+                color: #FFFFFF
+            ul
+                list-style-type: none
+                margin: 0
+                max-width: 195px
+                padding: 0
+                a
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 140%
+                    color: #FFFFFF
+                    display: block
+                    margin-bottom: 10px
+                    text-decoration: none
+.header
+    background: #FFFFFF
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.06)
+    padding: 17px 0
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__menu
+        padding: 0
+        margin: 0
+        list-style-type: none
+        display: flex
+        align-items: center
+        grid-gap: 30px
+        &>li
+            position: relative
+            ul
+                position: absolute
+                top: 100%
+                right: -25px
+                background: #14274E
+                padding: 15px 25px
+                z-index: 2
+                display: none
+                margin: 0
+                list-style-type: none
+                a
+                    display: block
+                    text-decoration: none
+                    padding: 5px 0
+                    color: #FFFFFF
+                    &:hover
+                        opacity: 0.8
+            &>a
+                display: block
+                font-weight: 500
+                font-size: 18px
+                line-height: 110%
+                text-decoration: none
+                color: #000000
+                padding: 10px 0
+                font-family: 'Raleway'
+                &:hover
+                    color: #5583E3
+            &.with-sub
+                padding-left: 16px
+                &::before
+                    content: ""
+                    width: 9px
+                    height: 8px
+                    display: block
+                    position: absolute
+                    left: 0
+                    top: 16px
+                    transition: all 0.3s
+                    background: url('../img/header-drop.svg') center no-repeat
+                &:hover
+                    &::before
+                        transform: rotate(180deg)
+                    ul
+                        display: block
+    &__logo
+        display: flex

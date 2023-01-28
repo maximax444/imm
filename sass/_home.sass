@@ -1,0 +1,530 @@
+.home
+    &-rev
+        padding-top: 100px
+        padding-bottom: 50px
+        overflow: hidden
+        &__top
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 60px
+        &__title
+            margin: 0
+            margin-bottom: 15px
+            font-family: 'Raleway'
+            font-style: normal
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            color: #000000
+        &__subtitle
+            font-weight: 600
+            font-size: 22px
+            line-height: 140%
+            color: #131313
+        &__all
+            border: 1px solid rgba(20, 39, 78, 0.6)
+            width: 232px
+            height: 85px
+            display: flex
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 18px
+            color: rgba(20, 39, 78, 0.6)
+            &:hover
+                background-color: #14274E
+                color: #fff
+        &__block
+            min-width: 475px
+            width: 475px
+            padding: 40px
+            padding-bottom: 15px
+            border: 2px solid rgba(0, 0, 0, 0.1)
+        &__wrap
+            display: flex
+            grid-gap: 60px
+            animation: marquee 100s linear infinite
+            &2
+                margin-left: -20px
+            &1
+                margin-bottom: 60px
+                margin-left: -160px
+        &__main
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+        &__img
+            width: 50px
+            height: 50px
+            background: #EDEDED
+            border-radius: 50%
+            overflow: hidden
+            margin-right: 19px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__cont
+            width: calc(100% - 70px)
+        &__name
+            font-weight: 600
+            font-size: 18px
+            line-height: 140%
+            margin-bottom: 2px
+            color: #131313
+        &__stars
+            display: flex
+            grid-gap: 5px
+        &__text
+            p
+                margin: 0
+                font-size: 18px
+                line-height: 140%
+                color: #131313
+                margin-bottom: 25px
+    &-history
+        padding: 100px 0
+        &__top
+            display: flex
+            justify-content: space-between
+            margin-bottom: 60px
+        &__title
+            margin: 0
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+        &__all
+            border: 1px solid rgba(20, 39, 78, 0.6)
+            width: 232px
+            height: 85px
+            display: flex
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 18px
+            color: #FFFFFF
+            margin: 0 auto
+            margin-top: 70px
+            border: 1px solid #14274E
+            background: #14274E
+            &:hover
+                background: transparent
+                color: #14274E
+        &__block
+            text-decoration: none
+            color: #000
+        &__img
+            height: 300px
+            overflow: hidden
+            margin-bottom: 30px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: all 0.3s
+        &__name
+            font-weight: 600
+            font-size: 20px
+            line-height: 140%
+            margin-bottom: 10px
+            color: #131313
+        &__sub
+            font-size: 16px
+            line-height: 140%
+            color: rgba(19, 19, 19, 0.6)
+            margin-bottom: 20px
+        &__link
+            font-weight: 600
+            font-size: 16px
+            line-height: 140%
+            color: #0041C7
+            transition: all 0.3s
+            &:hover
+                opacity: 0.8
+        &__prev
+            position: absolute
+            top: 206px
+            left: -60px
+            cursor: pointer
+        &__next
+            position: absolute
+            top: 206px
+            right: -60px
+            cursor: pointer
+        &__wrap
+            position: relative
+        &__block:hover
+            .home-history__img img
+                transform: scale(1.1)
+    &-links
+        position: relative
+        .container
+            position: relative
+            z-index: 3
+        &__bg
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            transition: all 0.4s
+            opacity: 0
+            &::after
+                content: ""
+                display: block
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            &.active
+                opacity: 1
+        &__wrap
+            display: flex
+        &__block
+            width: 25%
+            padding-top: 310px
+            padding-bottom: 365px
+            text-decoration: none
+            position: relative
+            &::after
+                content: ""
+                display: block
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                background: rgba(0, 0, 0, 0.3)
+                backdrop-filter: blur(15px) opacity(1)
+                opacity: 0
+                transition: all 0.3s
+            &:hover
+                &::after
+                    opacity: 1
+        &__img
+            display: block
+            text-align: center
+            margin-bottom: 33px
+            height: 22px
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            z-index: 3
+        &__name
+            font-weight: 700
+            font-size: 30px
+            line-height: 140%
+            text-align: center
+            color: #FFFFFF
+            display: block
+            margin-bottom: 24px
+            padding: 0 30px
+            min-height: 84px
+            position: relative
+            z-index: 3
+        &__descr
+            font-size: 22px
+            line-height: 140%
+            display: block
+            padding: 0 40px
+            margin: 0
+            text-align: center
+            color: rgba(255, 255, 255, 0.8)
+            position: relative
+            z-index: 3
+    &-steps
+        padding-top: 100px
+        padding-bottom: 100px
+        &__title
+            margin: 0
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            color: #000000
+            max-width: 740px
+            margin-bottom: 44px
+        &__top
+            background: #F5F5F5
+            margin-bottom: 50px
+        &__tabs
+            display: flex
+            grid-gap: 107px
+            align-items: center
+            a
+                padding: 38px 0
+                font-weight: 600
+                font-size: 22px
+                line-height: 115%
+                color: #808080
+                text-decoration: none
+                position: relative
+                &.active, &:hover
+                    color: #3A6BCE
+                &.active
+                    pointer-events: none
+                    &::after
+                        content: ""
+                        display: block
+                        width: 46px
+                        height: 46px
+                        background: #F5F5F5
+                        position: absolute
+                        bottom: -21px
+                        left: 5px
+                        transform: rotate(45deg)
+        &__wrap
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__img
+            width: 570px
+            height: 500px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__info
+            width: calc(100% - 620px)
+        &__name
+            font-weight: 600
+            font-size: 34px
+            line-height: 115%
+            margin-bottom: 10px
+        &__day
+            font-size: 18px
+            line-height: 140%
+            margin-bottom: 25px
+        &__descr
+            font-size: 22px
+            line-height: 140%
+            margin: 0
+            color: #131313
+            p
+                margin-top: 0
+                margin-bottom: 10px
+        &__cont
+            &-block
+                display: none
+                &.active
+                    display: block
+    &-details
+        background: url('../img/steps-bg.png') center bottom no-repeat
+        padding-top: 133px
+        padding-bottom: 160px
+        .container
+            padding-left: 108px
+        &__title
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            color: #FFFFFF
+            max-width: 540px
+            margin: 0
+            margin-bottom: 32px
+        &__wrap
+            display: flex
+            margin-bottom: 30px
+            p
+                margin: 0
+                max-width: 290px
+                font-size: 22px
+                line-height: 140%
+                color: #FFFFFF
+        &__consult
+            width: 388px
+            height: 85px
+            background: #14274E
+            border: 1px solid #14274E
+            display: flex
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 18px
+            line-height: 115%
+            color: #FFFFFF
+            margin-bottom: 40px
+            &:hover
+                background-color: transparent
+                color: #14274E
+        &__soc
+            display: flex
+            align-items: center
+            grid-gap: 40px
+            a
+                display: flex
+                align-items: center
+                grid-gap: 15px
+                font-size: 20px
+                line-height: 140%
+                color: #FFFFFF
+                text-decoration: none
+                &:hover
+                    opacity: 0.8
+    &-clients
+        padding: 188px 0
+        overflow: hidden
+        background: url('../img/home-clients-bg.jpg') top center no-repeat
+        background-size: cover
+        &__title
+            font-family: 'Raleway'
+            font-style: normal
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            margin-bottom: 82px
+            color: #fff
+        &__block
+            min-width: 385px
+            width: 385px
+            height: 215px
+            border: 2px solid #D9D9D9
+            display: flex
+            justify-content: center
+            align-items: center
+        &__img
+            width: 250px
+            height: 140px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                max-width: 95%
+                max-height: 95%
+        &__wrap
+            display: flex
+            grid-gap: 60px
+            animation: marquee 100s linear infinite
+            &2
+                margin-left: -20px
+            &1
+                margin-bottom: 60px
+                margin-left: -160px
+    &-news
+        padding: 100px 0
+        &__wrap
+            display: flex
+            justify-content: space-between
+        &__main
+            width: 740px
+            max-width: 48%
+            text-decoration: none
+            &:hover
+                img
+                    transform: scale(1.1)
+        &__img
+            height: 382px
+            overflow: hidden
+            width: 100%
+            margin-bottom: 30px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: all 0.3s
+        &__name
+            font-weight: 600
+            font-size: 30px
+            line-height: 140%
+            color: #131313
+        &__list
+            width: 740px
+            max-width: 48%
+        &__row
+            padding-top: 24px
+            padding-bottom: 34px
+            border-bottom: 1px solid #D9D9D9
+            display: block
+            text-decoration: none
+            &:first-child
+                padding-top: 0
+            &:hover
+                opacity: 0.8
+            &-name
+                display: block
+                margin-bottom: 14px
+                font-weight: 600
+                font-size: 22px
+                line-height: 140%
+                color: #131313
+            &-date
+                font-size: 16px
+                line-height: 140%
+                color: rgba(19, 19, 19, 0.6)
+    &-table
+        padding-bottom: 100px
+        padding-top: 70px
+        &2
+            background: #F7F9FF
+        &__title
+            margin: 0
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            color: #000000
+            margin-bottom: 93px
+            font-family: 'Raleway'
+        &__cell
+            width: 25%
+        &__titles
+            display: flex
+            align-items: center
+            padding-bottom: 24px
+            .home-table__cell
+                display: flex
+                align-items: center
+                grid-gap: 10px
+                font-weight: 600
+                font-size: 22px
+                line-height: 140%
+                color: #000000
+                &:first-child
+                    color: rgba(0, 0, 0, 0.6)
+                    font-size: 18px
+                    line-height: 140%
+        &__row
+            border-top: 1px solid #D9D9D9
+            display: flex
+            padding: 24px 0
+            .home-table__cell
+                font-weight: 400
+                font-size: 16px
+                line-height: 140%
+                padding-right: 30px
+                &:first-child
+                    font-weight: 600
+        &__all
+            border: 1px solid rgba(20, 39, 78, 0.6)
+            width: 292px
+            height: 85px
+            display: flex
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 18px
+            color: #FFFFFF
+            margin: 0 auto
+            margin-top: 70px
+            border: 1px solid #14274E
+            background: #14274E
+            &:hover
+                background: transparent
+                color: #14274E

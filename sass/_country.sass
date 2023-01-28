@@ -1,0 +1,382 @@
+.country
+    padding-top: 54px
+    &__tabs
+        display: flex
+        grid-gap: 50px
+        a
+            font-weight: 700
+            font-size: 24px
+            line-height: 115%
+            text-decoration: none
+            color: rgba(0, 0, 0, 0.3)
+            padding-bottom: 11px
+            &.active, &:hover
+                color: #0041C7
+                border-bottom: 1px solid #0041C7
+    &__main
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 40px
+        padding-bottom: 51px
+        grid-gap: 60px
+    &__img
+        width: 820px
+        height: 580px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__info
+        max-width: calc(100% - 900px)
+    &__title
+        margin: 0
+        font-size: 54px
+        line-height: 115%
+        margin-bottom: 30px
+        font-family: 'Raleway'
+    &__text
+        margin: 0
+        margin-bottom: 40px
+        font-size: 22px
+        line-height: 140%
+        p
+            margin-bottom: 30px
+            margin-top: 0
+    &__bottom
+        display: flex
+        grid-gap: 4px 0px
+        flex-wrap: wrap
+        &-block
+            width: 280px
+        &-title
+            font-weight: 600
+            font-size: 22px
+            line-height: 140%
+            margin-bottom: 25px
+    &__adress
+        display: flex
+        align-items: flex-start
+        grid-gap: 12px
+    &__links
+        display: flex
+        align-items: center
+        a
+            display: flex
+            align-items: center
+            grid-gap: 13px
+            font-weight: 600
+            font-size: 18px
+            line-height: 140%
+            color: #000000
+            text-decoration: none
+    &__skype
+        display: flex
+        align-items: center
+        grid-gap: 10px
+        text-decoration: none
+        font-size: 18px
+        line-height: 140%
+        color: #000000
+    &-section
+        padding-bottom: 55px
+        &__wrap
+            display: flex
+            justify-content: space-between
+        &__left
+            width: calc(100% - 300px)
+        &__main
+            background: #F8F9FA
+            display: flex
+            margin-bottom: 25px
+        &__consult
+            background: #F8F9FA
+            display: flex
+            padding: 25px
+            grid-gap: 40px
+            a
+                margin-top: 0
+            p
+                width: calc(100% - 300px)
+        &__docs
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            a
+                width: 50%
+                padding: 5px
+                img
+                    max-width: 100%
+        &__arts
+            margin-bottom: 25px
+            width: 280px
+            background: #F8F9FA
+            padding: 25px
+            &>a
+                display: flex
+                align-items: center
+                grid-gap: 10px
+                font-size: 16px
+                line-height: 150%
+                color: #000000
+                text-decoration: none
+                padding: 5px 0
+                img
+                    max-width: 30px
+            &-title
+                font-size: 14px
+                text-transform: uppercase
+                text-decoration: none
+                color: #000
+                background-color: #ebebeb
+                font-weight: 600
+                text-align: center
+                display: flex
+                justify-content: center
+                padding: 10px 0
+                margin-bottom: 20px
+            ul
+                padding-left: 20px
+                margin: 0
+                li a
+                    font-size: 16px
+                    line-height: 150%
+                    color: #000000
+                    text-decoration: none
+                    padding: 5px 0
+                    display: block
+                    &:hover
+                        opacity: 0.8
+        &__tabs
+            width: 152px
+            a
+                width: 100%
+                height: 54px
+                display: flex
+                align-items: center
+                padding-left: 20px
+                padding-right: 10px
+                font-size: 14px
+                text-transform: uppercase
+                text-decoration: none
+                color: #000
+                background-color: #ebebeb
+                font-weight: 600
+                &.active, &:hover
+                    background-color: transparent
+        &__title
+            margin-bottom: 24px
+            font-size: 20px
+            text-transform: uppercase
+            font-weight: 700
+            text-align: center
+        &__cont
+            &-block
+                padding: 40px
+                padding-top: 20px
+                display: none
+                &.active
+                    display: block
+                p, li
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 150%
+                    color: #000000
+                    margin-top: 0
+                    margin-bottom: 24px
+    &-feat
+        padding: 115px 0
+        &__title
+            margin: 0
+            font-family: 'Raleway'
+            font-size: 54px
+            line-height: 115%
+            margin-bottom: 60px
+        &__wrap
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            grid-gap: 40px 0
+        &__block
+            width: 340px
+            max-width: 23%
+        &__num
+            margin-bottom: 22px
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            color: #5583E3
+        &__text
+            margin: 0
+            font-size: 22px
+            line-height: 140%
+    &-serv
+        padding-bottom: 66px
+        padding-top: 73px
+        &__wrap
+            display: flex
+            justify-content: space-between
+        &__title
+            margin: 0
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            color: #000000
+            margin-bottom: 60px
+        &__cont
+            width: 48%
+            ol
+                font-size: 22px
+                line-height: 140%
+                color: #000000
+                li
+                    margin-bottom: 10px
+        &__img
+            width: 48%
+            height: 740px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+    &-docs
+        padding: 95px 0
+        &__title
+            margin: 0
+            margin-bottom: 80px
+            max-width: 760px
+            font-family: 'Raleway'
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            color: #000000
+        &__wrap
+            position: relative
+        &__prev
+            display: flex
+            position: absolute
+            top: 50%
+            margin-top: -24px
+            left: -60px
+        &__next
+            display: flex
+            position: absolute
+            top: 50%
+            margin-top: -24px
+            right: -60px
+        &__block
+            padding: 23px 25px
+            border: 2px solid rgba(0, 0, 0, 0.1)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+    &-oforml
+        padding: 95px 0
+        &__title
+            margin-bottom: 50px
+            margin-top: 0
+            font-family: 'Raleway'
+            font-style: normal
+            font-weight: 700
+            font-size: 54px
+            line-height: 115%
+            color: #000000
+            max-width: 710px
+        &__subtitle
+            margin-bottom: 50px
+            font-weight: 600
+            font-size: 34px
+            line-height: 115%
+        &__wrap
+            ul
+                list-style-type: none
+                padding: 0
+                margin: 0
+                columns: 2
+                li
+                    font-size: 20px
+                    line-height: 140%
+                    margin-bottom: 10px
+                    padding-right: 30px
+@media (max-width: 1569px)
+    .country
+        &__img
+            width: 500px
+            height: auto
+        &__info
+            max-width: calc(100% - 560px)
+        &__title
+            padding-right: 0
+            font-size: 50px
+@media (max-width: 1199px)
+    .country
+        &__tabs
+            grid-gap: 25px
+            a
+                font-size: 18px
+        &__title
+            font-size: 32px
+        &__text
+            font-size: 16px
+@media (max-width: 991px)
+    .country
+        &__tabs
+            grid-gap: 15px
+            a
+                font-size: 17px
+        &__info
+            max-width: 100%
+            margin-bottom: 40px
+        &__main
+            display: block
+        &__text
+            font-size: 16px
+        &-section
+            &__wrap
+                display: block
+            &__left
+                width: 100%
+            &__aside
+                padding-top: 40px
+                display: flex
+                flex-wrap: wrap
+                grid-gap: 25px
+@media (max-width: 767px)
+    .country
+        &__tabs
+            flex-wrap: wrap
+            grid-gap: 15px
+        &-section
+            &__aside
+                grid-gap: 25px 0px
+                justify-content: space-between
+            &__arts
+                width: 48%
+            &__consult
+                display: block
+                p
+                    width: 100%
+                a
+                    margin-top: 30px
+                    margin-left: 0
+@media (max-width: 575px)
+    .country
+        &__img
+            width: 100%
+        &-section
+            .container
+                padding: 0
+            &__main
+                display: block
+            &__tabs
+                display: flex
+                width: 100%
+                overflow-x: scroll
+            &__cont
+                &-block
+                    padding: 25px 15px
+            &__aside
+                display: block
+            &__arts
+                width: 100%
