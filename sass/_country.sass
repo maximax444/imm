@@ -17,7 +17,6 @@
         display: flex
         justify-content: space-between
         align-items: center
-        padding-top: 40px
         padding-bottom: 51px
         grid-gap: 60px
     &__img
@@ -38,7 +37,7 @@
     &__text
         margin: 0
         margin-bottom: 40px
-        font-size: 22px
+        font-size: 18px
         line-height: 140%
         p
             margin-bottom: 30px
@@ -208,7 +207,7 @@
             color: #5583E3
         &__text
             margin: 0
-            font-size: 22px
+            font-size: 18px
             line-height: 140%
     &-serv
         padding-bottom: 66px
@@ -302,13 +301,34 @@
 @media (max-width: 1569px)
     .country
         &__img
-            width: 500px
+            width: 600px
             height: auto
         &__info
-            max-width: calc(100% - 560px)
+            max-width: calc(100% - 660px)
         &__title
             padding-right: 0
             font-size: 50px
+        &__text
+            font-size: 16px
+        &-feat
+            padding: 50px 0
+            &__text
+                font-size: 15px
+        &-serv
+            padding: 50px 0
+            &__img
+                height: auto
+            &__cont
+                ol
+                    li
+                        font-size: 16px
+                        line-height: 115%
+                        margin-bottom: 18px
+        &-oforml
+            padding: 50px 0
+            &__wrap
+                ul li
+                    font-size: 16px
 @media (max-width: 1199px)
     .country
         &__tabs
