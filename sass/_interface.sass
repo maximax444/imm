@@ -319,6 +319,8 @@
     background: #FFFFFF
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.06)
     padding: 17px 0
+    &__burg
+        display: none
     &__wrap
         display: flex
         align-items: center
@@ -422,3 +424,130 @@
             width: 47px
             img
                 width: 100%
+.menu
+    background: #5583E3
+    position: fixed
+    top: 0
+    right: -100vw
+    width: 100vw
+    height: 100vh
+    position: fixed
+    z-index: 10
+    transition: all 0.3s
+    padding: 25px 15px
+    overflow-y: scroll
+    &.active
+        right: 0
+    &__close
+        position: absolute
+        top: 32px
+        right: 15px
+@media(max-width: 1199px)
+    .footer
+        &__wrap
+            display: block
+        &__right
+            padding-top: 0px
+            .top__right
+                justify-content: flex-end
+    .main
+        overflow: hidden
+        &__wrap
+            display: block
+        &__place
+            display: block
+            &::after
+                width: 10px
+                height: 10px
+                content: ""
+                display: block
+                position: absolute
+                top: 40%
+                left: 50%
+                margin-top: -8px
+                margin-left: -4px
+                border-radius: 50%
+                background-color: #fff
+@media(max-width: 991px)
+    .top
+        display: none
+    .header
+        &__menu
+            display: none
+        &__burg
+            display: block
+@media(max-width: 767px)
+    .main
+        &__map
+            width: 550px
+        &__place
+            width: 34px
+            &::after
+                margin-left: -5px
+    .footer
+        &__menu
+            flex-wrap: wrap
+            li
+                &:nth-child(1)
+                    order: -1
+                &:nth-child(2)
+                    order: -1
+                &:nth-child(3)
+                    order: -1
+                &:nth-child(6)
+                    order: -1
+@media(max-width: 575px)
+    .footer
+        &__menu
+            grid-gap: 25px 0
+            li
+                width: 50%
+        &__right
+            padding-top: 40px
+    .header
+        padding: 10px 0
+        position: sticky
+        top: 0
+        z-index: 15
+        &__logo
+            img
+                max-width: 100px
+    .menu
+        z-index: 20
+    .main
+        &__links
+            display: none
+        &__map
+            width: 290px
+            margin: 0 auto
+            position: absolute
+            top: 150px
+            left: 0
+        &__place
+            width: 18px
+            &::after
+                width: 5px
+                height: 5px
+                margin-left: -2px
+                margin-top: -4px
+        &__cont
+            width: 100%
+            padding-bottom: 0px
+        &__title
+            font-size: 28px
+            margin-bottom: 30px
+        &__subtitle
+            font-size: 16px
+            margin-bottom: 30px
+            margin-bottom: 250px
+        &__block
+            width: 48%
+        &__wrapper
+            grid-gap: 25px 0
+        &__select
+            &-top::after
+                display: none
+            &-drop
+                display: block
+                position: static
+                box-shadow: none

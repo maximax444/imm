@@ -133,3 +133,11 @@ $(".home-table__cell")
             $(this).find(".home-table__cell").eq(ind).removeClass('active');
         });
     });
+$('.header__burg-open').on('click', function (e) {
+    e.preventDefault();
+    $('.menu').addClass('active');
+});
+$('.header__burg-close').on('click', function (e) {
+    e.preventDefault();
+    $('.menu').removeClass('active');
+});

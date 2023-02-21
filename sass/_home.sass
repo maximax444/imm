@@ -592,3 +592,194 @@
                 margin-bottom: 42px
                 br
                     display: none
+    .home-news__name
+        font-size: 20px
+@media(max-width: 1199px)
+    .home
+        &-table
+            &__row, &__titles
+                width: 1170px
+            &__wrap
+                overflow-x: scroll
+        &-steps
+            &__tabs
+                a
+                    padding: 10px 20px
+                    min-height: 70px
+            &__img
+                width: 300px
+                height: 300px
+            &__info
+                width: calc(100% - 340px)
+        &-details
+            .container
+                padding-left: 0
+@media(max-width: 991px)
+    .home
+        &-links
+            &__block
+                height: auto
+                min-height: auto
+                padding: 160px 0
+            &__name
+                font-size: 22px
+            &__descr
+                font-size: 16px
+                padding: 0 15px
+            &__wrap
+                align-items: flex-start
+        &-steps
+            &__tabs
+                a
+                    font-size: 14px
+                    padding: 10px 15px
+            &__wrap
+                flex-direction: column-reverse
+            &__info
+                width: 100%
+                margin-bottom: 25px
+            &__img
+                width: 100%
+                height: auto
+                max-height: 300%
+        &-news
+            &__wrap
+                display: block
+            &__list
+                width: 100%
+                padding-top: 80px
+                max-width: 100%
+@media(max-width: 767px)
+    .home
+        &-links
+            &__wrap
+                flex-wrap: wrap
+            &__block
+                width: 50%
+                padding: 50px 0
+            &__img
+                margin-bottom: 15px
+            &__name
+                min-height: auto
+                margin-bottom: 10px
+        &-steps
+            &__tabs
+                margin: 0 -15px
+                overflow-x: scroll
+                a
+                    min-width: 160px
+@media(max-width: 575px)
+    .home
+        &-links
+            &__wrap
+                flex-wrap: wrap
+            &__block
+                width: 50%
+                padding: 30px 0
+            &__img
+                margin-bottom: 15px
+            &__name
+                min-height: auto
+                margin-bottom: 10px
+                font-size: 18px
+            &__descr
+                font-size: 14px
+        &-table
+            padding: 40px 0
+            &__wrap
+                margin-left: -15px
+                margin-right: -15px
+                padding: 0 15px
+            &__title
+                font-size: 22px
+                margin-bottom: 40px
+        &-steps
+            &__title
+                font-size: 22px
+                margin-bottom: 40px
+            &__name
+                font-size: 20px
+            &__descr
+                font-size: 14px
+        &-details
+            .container
+                padding: 0 15px
+            &__title
+                font-size: 22px
+            &__wrap
+                grid-gap: 20px
+                p
+                    font-size: 14px
+                    width: 50%
+            &__consult
+                width: 100%
+        &-history
+            &__title
+                font-size: 22px
+                margin-bottom: 40px
+            .container
+                padding: 0 30px
+            &__top
+                margin-bottom: 0
+            &__prev
+                left: -25px
+                width: 20px
+                img
+                    width: 100%
+            &__next
+                right: -25px
+                width: 20px
+                img
+                    width: 100%
+            &__img
+                height: 200px
+                margin-bottom: 15px
+            &__name
+                font-size: 16px
+            &__all
+                margin-top: 30px
+        &-rev
+            &__title
+                font-size: 22px
+            &__subtitle
+                font-size: 16px
+            &__wrap
+                animation: none
+                display: block
+                margin-left: 0
+                padding: 0 15px
+            &__block
+                width: 100%
+                min-width: 100%
+                margin-bottom: 15px
+                display: none
+                &:nth-child(1), &:nth-child(2), &:nth-child(3)
+                    display: block
+        &-clients
+            padding: 40px 0
+            background: url("../img/home-clients-bg.jpg") bottom center no-repeat
+            &__title
+                font-size: 22px
+                margin-bottom: 40px
+            &__wrap
+                display: flex
+                grid-gap: 15px 0
+                flex-wrap: wrap
+                padding: 0 15px
+                justify-content: space-between
+            &__block
+                width: 48%
+                display: none
+                &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8)
+                    display: block
+        &-news
+            padding: 40px 0
+            &__img
+                height: auto
+                margin-bottom: 15px
+            &__name
+                font-size: 16px
+            &__row
+                padding: 15px 0
+                &-name
+                    font-size: 16px
