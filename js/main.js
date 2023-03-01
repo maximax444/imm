@@ -90,11 +90,11 @@ const swiper2 = new Swiper('.country-docs .swiper', {
         }
     }
 });
-$('.home-table__all').on('click', function (e) {
-    e.preventDefault();
-    $(this).closest('.home-table').find('.home-table__wrap').addClass('active');
-    $(this).hide();
-});
+// $('.home-table__all').on('click', function (e) {
+//     e.preventDefault();
+//     $(this).closest('.home-table').find('.home-table__wrap').addClass('active');
+//     $(this).hide();
+// });
 $(".main__select-top, .main__select-drop a").each(function () {
     $(this)
         .mouseover(function () {
