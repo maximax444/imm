@@ -164,12 +164,6 @@
                 margin-bottom: 5px
                 &:hover
                     color: #5583E3
-        &:hover
-            .main__select
-                &-top::after
-                    transform: rotate(180deg)
-                &-drop
-                    display: block
     &__map
         position: relative
     &__place
@@ -389,6 +383,14 @@
             font-size: 10px
             line-height: 140%
             color: #000000
+@media(min-width: 576px)
+    .main__select
+        &:hover
+            .main__select
+                &-top::after
+                    transform: rotate(180deg)
+                &-drop
+                    display: block
 @media(max-width: 1569px)
     .footer__menu
         grid-gap: 40px
